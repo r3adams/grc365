@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	} header img {
+		width: 1024px;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		display: block;
+	} header h1 {
+		font-family: "Fredericka the Great";
+		text-align: center;
+		margin: 32px 0;
+		color: maroon;
+	} header p {
+        font: italic 10pt/1.4em Georgia, serif;
+		text-align: right;
+		margin: 3px 12px 0 0;
+	} #page {
+		width: 1024px;
+		max-width: 100%;
+		height: 1228px;
+		margin: 24px auto 24px auto;
+		background: linear-gradient(lightyellow, white);
+		border: 1px solid maroon;
+		box-shadow: 3px 2px 6px lightgrey;
+	} #livearea {
+        font: 14pt/1.4em Georgia, serif; 
+        color: dimgray;
+        margin: 2% 5%;
+    } #livearea p {
+        margin: 2% 5%;
+	} footer {
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+	} button {
+		width: 124px;
+		height: 32px;
+		font-size: 11pt;
+		font-weight: bold;
+		background: tan;
+		margin-left: 3px;
+		border-radius: 6px;
+	} button:hover {
+		box-shadow: 2px 1px 4px darkgray;
+        opacity: 0.75;
+    }
+</style>
+<script language="javascript" type="text/javascript">
+    function printPage() {
+        this.window.print();
+    } function increaseContrast() {
+        document.getElementById("livearea").style.color="black";
+        document.getElementById("page").style.background="white";
+    } function decreaseContrast() {
+        document.getElementById("livearea").style.color="dimgray";
+        document.getElementById("page").style.background="linear-gradient(lightyellow, white)";    }
+</script>
+</head>
+
+<body>
+<div id="page">
+	<header>
+		<img src="fireplace-1741208.jpg" />
+		<p>Image courtesy of Pixabay.com by user joseclaudioguima</p>
+		<h1>JavaScript Fireside Chat</h1>
+	</header>
+
+	<div id="livearea">
+        <p>JavaScript is a programming language used to add interactivity to web sites. For example, if you want to add animation to a page that users can trigger with a button, you will need JavaScript to connect the button to the animation. Programming in JavaScript can be a daunting task, so the goal of the “Fireside Chat” is to break down the steps necessary to add programming to a page.</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus at augue eget arcu dictum. Nisi lacus sed viverra tellus in. Dignissim enim sit amet venenatis urna cursus. Est ante in nibh mauris cursus. Sit amet facilisis magna etiam tempor orci eu lobortis. Nisl pretium fusce id velit. Dictum sit amet justo donec enim. Faucibus purus in massa tempor. Suspendisse potenti nullam ac tortor vitae purus. Tristique sollicitudin nibh sit amet commodo. Et magnis dis parturient montes nascetur. Cursus sit amet dictum sit amet justo donec enim diam.</p>
+
+	</div>
+	<footer>
+		<button onClick="printPage()">Print</button>
+		<button onClick="increaseContrast()">&uarr; Contrast</button>
+		<button onClick="decreaseContrast()">&darr; Contrast</button>
+	</footer>
+</div>
+</body>
+</html>
