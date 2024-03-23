@@ -52,6 +52,15 @@
 	} button:hover {
 		box-shadow: 2px 1px 4px darkgray;
         opacity: 0.75;
+    } @media only print {
+        #page {
+            max-height: 9.0in;
+            border: none;
+            background: none;
+            box-shadow: none;
+        } footer {
+            display: none;
+        }
     }
 </style>
 <script language="javascript" type="text/javascript">
