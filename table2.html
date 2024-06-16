@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } h1 {
+        font: 36pt/1.4em 'Protest Strike';
+        text-align: center;
+        color: powderblue;
+        text-shadow: 2px 3px 0 black;
+        margin: 24px 0 0 0;
+    } header {
+        width: 100%;
+        height: 24px;
+        background: lightgreen;
+        font: 12pt/1.4em Georgia;
+        text-align: center;
+        position: fixed;
+        top: 0;
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 60ch;
+        margin: 12px auto;
+    } figcaption {
+        font: italic 13pt/1.4em Georgia;
+        width: 60ch;
+        margin: 12px auto 24px auto;
+    } table {
+        font: 14pt/1.4em Georgia;
+    } #table1 {
+        margin: 24px auto;
+    } #table2 {
+        border-collapse: collapse;
+        margin: 48px auto 24px auto;
+        border: 2px solid gainsboro;
+    } #table2 td, #table2 th {
+        padding: 8px 18px;
+    } #table2 tr:nth-child(odd) {
+        background: gainsboro;
+    } #table2 th {
+        background: rgba(176,224,230,0.90);
+    } #table3 {
+        border-collapse: collapse;
+	    border: 2px solid rgb(23,38,173);
+        margin: 50px auto 0 auto;
+        background: url("_DSC0067_1004_ghost.jpg");
+        background-size: contain;
+    } #table3 td {
+	    padding: 10px;
+    } #table3 th {
+	    padding: 10px;
+	    background: rgba(34,58,168);
+	    font-size: 24px;
+	    color: white;
+    } #table3 tr:nth-child(odd) {
+	    background: rgba(255,255,255,0.25);
+    } #table3 tr:nth-child(even) {
+	    background: rgba(255,255,255,0.45);
+    } #table3 td:nth-child(even) {
+	    border-left: 2px solid rgb(23,38,173);
+    } #table3 td:last-child {
+	    border-left: 2px solid rgb(23,38,173);
+    } #table3 #first_row {
+	    font-style: italic;
+	    background: rgba(255,255,255,0.50);
+    }
+</style>
+</head>
+
+<body>
+<h1>Table Gallery</h1>
+<p>This page shows some of the creative effects you can apply to tables. If you design a table for a client, you would ideally like to get the table information in Excel, so you could import it as comma-separated values (.csv) into Dreamweaver using File &gt; Import &gt; Tabular Data. </p>
+<table id="table1" border="1">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+    <td>Row 1, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+    <td>Row 2, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 3, Column 1</td>
+    <td>Row 3, Column 2</td>
+    <td>Row 3, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 4, Column 1</td>
+    <td>Row 4, Column 2</td>
+    <td>Row 4, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 5, Column 1</td>
+    <td>Row 5, Column 2</td>
+    <td>Row 5, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 6, Column 1</td>
+    <td>Row 6, Column 2</td>
+    <td>Row 6, Column 3</td>
+  </tr>
+</table>
+<figcaption>Default table appearance, with double-lined borders, Times Roman font, and crowded spacing around text.</figcaption>
+<table id="table2" border="0">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+    <td>Row 1, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+    <td>Row 2, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 3, Column 1</td>
+    <td>Row 3, Column 2</td>
+    <td>Row 3, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 4, Column 1</td>
+    <td>Row 4, Column 2</td>
+    <td>Row 4, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 5, Column 1</td>
+    <td>Row 5, Column 2</td>
+    <td>Row 5, Column 3</td>
+  </tr>
+  <tr>
+    <td>Row 6, Column 1</td>
+    <td>Row 6, Column 2</td>
+    <td>Row 6, Column 3</td>
+  </tr>
+</table>
+<figcaption>Redesigned table with increased padding around text, even rows selected with &ldquo;nth-child&rdquo; selector and shaded &ldquo;Gainsboro&rdquo; (light gray), and set in the screen font Georgia.</figcaption>
+<table id="table3">
+    <tr>
+        <th colspan="3">Russian Fairytale Boxes</th>
+    </tr>
+    <tr id="first_row">
+        <td>Box Theme</td>
+        <td>Characters Depicted</td><td>English Counterpart</td>
+    </tr>
+    <tr><td>The Grey Wolf</td><td>Ivan Tsarevitch, Helen the Beautiful, the Grey Wolf</td><td>none</td></tr>
+    <tr>
+        <td>The Horse with the Golden Mane</td>
+        <td>Ivan Tsarevitch and the Horse with the Golden Mane</td>
+        <td>The Magic Pony</td>
+    </tr>
+    <tr>
+        <td>The Firebird</td>
+        <td>Ivan Tsarevitch and the Firebird</td>
+        <td>The Phoenix</td>
+    </tr>
+    <tr>
+        <td>Father Frost</td>
+        <td>Father Frost, the Snow Queen, and a troika of horses</td>
+        <td>Santa Claus</td>
+    </tr>
+</table>
+<figcaption style="margin-bottom: 72px;">Table with ghosted-back image background and even rows lightened with transparent white (rgba, where &ldquo;a&rdquo; is alpha). The table lists Russian fairytale characters, commonly illustrated on laquer boxes.</figcaption>
+</body>
+</html>
