@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexible Box and Grid Layout Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } h1 {
+        font: bold 42pt/1.4em "Shadows Into Light";
+        text-align: center;
+        color: dimgray;
+        text-shadow: 2px 2px 0 cyan;
+    } p {
+        font: 14pt/1.4em Georgia, serif;
+        width: 768px;
+        margin: 0 auto;
+    } #container1, #container2 {
+        width: 768px;
+        max-width: 100%;
+        height: 640px;
+        margin: 36px auto;
+        border: 3px dotted darkgray;
+    } #container1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    } #container2 {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        align-content: space-around;
+        justify-content: space-around;
+    } .item {
+        width: 200px;
+        height: 200px;
+    } .one {
+        background: cyan;
+    } .two {
+        background: magenta;
+    } .three {
+        background: yellow;
+    } .four {
+        background: red;
+    } .five {
+        background: green;
+    } .six {
+        background: blue;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Flexible Box and Grid Layout Demo</h1>
+    <div id="container1">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+        <div class="item six"></div>
+    </div>
+    <p><b>Flexible Box Layout.</b> The above dotted gray rectangle &lt;div&gt; is set to &ldquo;display: flex;&rdquo; so that the colored squares arrange themselves within the container, depending on the screen width. (Try varying the browser window width to see that the layout is partially responsive.) Subsidiary styles &ldquo;justify-content&rdquo; (horizontal) and &ldquo;align-content&rdquo; (vertical) are set to &ldquo;center.&rdquo;</p>
+    <div id="container2">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+        <div class="item six"></div>
+    </div>
+    <p style="margin-bottom: 144px;"><b>Grid  Layout.</b> The above dotted gray rectangle &lt;div&gt; is set to &ldquo;display: grid;&rdquo; with 3 columns. Again subsidiary styles &ldquo;justify-content&rdquo; (horizontal) and &ldquo;align-content&rdquo; (vertical) are set to &ldquo;center.&rdquo;</p>
+    </body>
+</html>
