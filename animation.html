@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: whitesmoke;
+    } #container {
+        width: 928px;
+        height: 1300px;
+        margin: 0 auto;
+        padding: 0 24px 0 24px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        overflow: hidden;
+    } h1 {
+        font: 42pt/1.4em Lobster;
+        text-align: center;
+        text-shadow: 1px 2px 3px rgba(229,25,55,0.67);
+    } h2 {
+        font: 600 16pt/1.4em Roboto;
+    } p {
+        font: 400 14pt/1.4em Roboto;
+    } aside {
+        font: 10pt/1.4em Roboto;
+    } #car1, #car2, #car3 {
+        width: 200px;
+        position: relative;
+        left: 0;
+    } #car1 {
+        animation-name: letsgo;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    } #car2 {
+        animation-name: letsgo;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    } #car2:active {
+        animation-play-state: running;
+    } #car3 {
+        animation-name: letsgo;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    } button {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background: lightgreen;
+        display: block;
+    } button:hover {
+        box-shadow: 1px 2px 4px darkgray;
+    } button:active {
+        background: orange;
+    } @keyframes letsgo {
+        0% {left: 0;}
+        100% {left: 120vw;}
+    }
+</style>
+</head>
+
+<body>
+    <div id="container">
+    <h1>Animation</h1>
+    <h2>Animation with No User Interaction</h2>
+    <p>When the page is loaded, the car moves off the screen by itself.</p>
+    <img id="car1" src="car.png" />
+    <hr/>
+    <h2>User Interaction with &ldquo;Active&rdquo; Pseudoclass</h2>
+    <p>Click and hold the mouse on the car to make it move off the screen. The animation was set to &ldquo;animation-play-state: paused;&rdquo; and the &ldquo;:active&rdquo; pseudoclass was used to set the play state to &ldquo;running.&rdquo;</p>
+    <img id="car2" src="car.png" />
+    <hr/>
+    <h2>User Interaction with JavaScript Button</h2>
+    <p>The car drives off the page when the green button is clicked. The button has an attached JavaScript program that sets the animation play state to &ldquo;running.&rdquo; The JavaScript statement reads, onClick="document.getElementById('car3').style.animationPlayState='running';".<br/>Note that no # is required for the ID and use of nested single quotes to avoid confusion.</p>
+    <button onClick="document.getElementById('car3').style.animationPlayState='running';">Go!</button>
+    <img id="car3" src="car.png" />
+    <aside>Car icon courtesy of pngtree.com</aside>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
