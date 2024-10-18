@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: whitesmoke;
+    } #page {
+        width: 968px;
+        height: 1224px;
+        margin: 0 auto;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #textbox {
+        width: 928px;
+        height: 1024px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        border: 6px dotted lightblue;
+    } .image2 {
+        width: 228px;
+        height: 341px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        background: url("alice-cover.jpg");
+        background-size: 100%;
+        background-position: center;
+        transition: background-size 0.67s;
+   } .image2:hover {
+        background-size: 105%;
+        transition: background-size 0.67s;
+    } .image1 {
+        width: 228px;
+        height: 341px;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        background: url("alice-cover.jpg");
+        background-size: 100%;
+        background-position: center;
+        transition: transform 0.67s;
+   } .image1:hover {
+        transform: scale(1.03);
+        transition: transform 0.67s;
+
+    } h1 {
+        font: 48pt/1.0em Lobster;
+        text-shadow: 1px 2px 3px rgba(17,230,232,0.67);
+        text-align: center;
+        padding-top: 6px;
+    } figure {
+        width: 200px;
+    } figcaption {
+        margin-top: 6px;
+        font: 12pt/1.4em Roboto;
+    } p {
+        margin-top: 0;
+        font: 14pt/1.4em Roboto;
+        width: 500px;
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+<h1>Portfolio</h1>
+    <div id="textbox">
+    <figure>
+    <div class="image1"></div>
+    <figcaption>Interactive PDF of <em>Alice in Wonderland</em>, thumbnail enlarges on hover.</figcaption>
+    </figure>
+    <figure>
+    <div class="image2"></div>
+    <figcaption>Interactive PDF of <em>Alice in Wonderland</em>, thumbnail zooms within container on hover.</figcaption>
+    </figure>
+    <p style="margin-top: 12px;">This portfolio page was built as a fixed-width page with an inner &ldquo;textbox&rdquo; (light blue dotted line) set to &ldquo;display: flex;&rdquo; so that future thumbnails when added will arrange themselves on the page.</p>
+    <p>The thumbnails can be linked to a web page, a larger version of a photo or drawing, or a downloadable PDF.</p>
+    <p>The two thumbnails scale up on hover, the first by enlarging overall and the second by enlarging within its fixed-size container div. Use the browser&rsquo;s &ldquo;web inspector&rdquo; to see the code.</p>
+    </div>
+</div>
+</body>
+</html>
