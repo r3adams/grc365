@@ -1,95 +1,102 @@
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Catalog of Web Pages</title>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <style>
     @font-face {
         font-family: Georgia;
         src: url("Georgia.ttf");
-    } * {
-        margin: 0; padding: 0;
-    } #banner {
-        width: 1228px;
-        max-width: 100%;
-		height: 184px;
-		background: lightblue;
-		margin: 0 auto;
-		font-family: Lobster;
-		color: dimgray;
-	} #banner h1 {
-		font-size: 48pt;
-		font-weight: normal;
-		line-height: 2em;
-		text-align: center;
-        text-shadow: 1px 1px 0px red;
-	} #banner h3 {
-        font-family: Roboto, sans-serif;
-		font-size: 14pt;
-		font-weight: normal;
-		text-align: center;
-		line-height: 1.0em;
-        color: black;
-    } ul {
-        width: 100%;
-    } ul li {
-        width: 20%;
-        height: 40px;
-        list-style: none;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 768px;
+        height: 872px;
+        margin: 0 auto;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #logo {
+        width: 100px;
+        margin: 24px 36px 0 36px;
         float: left;
-        text-align: center;
-        font: 14pt/2.2em Roboto;
-        background: lightblue;
-        margin: 0 0 0 0;
-    } ul li:hover {
-        background: rgba(173,216,230,0.50);
-	} #page {
-		width: 1228px;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto 0 auto;
-		background: whitesmoke;
-		padding: 0 0 72px 0;
-	} a {
-		text-decoration: none;
-		color: black;
-	} a h2:hover {
-		background: skyblue;
-	} #text {
-		font: 14pt/1.4em Georgia;
-		width: 80%;
-        margin: 72px auto;
-		padding: 36px;
-	} .rich {
-		width: 200px;
-		float: right;
-		margin: 14px 0 0 36px;
-		border: 1px solid darkgray;
-		box-shadow: 2px 3px 6px darkgray;
-	} p {
-		margin-top: 12px;
+    } h1 {
+        font: 32pt/1.4em 'Rethink Sans';
+    } #page div {
+        padding: 12px;
+    } p {
+        font: italic 12pt/1.4em Georgia, serif;
+        margin: 0 24px 24px 24px;
+    } form {
+        width: 728px;
+        background: rgba(176,196,222,0.25);
+        margin: 0 auto;
+        font: 14pt/1.4em Georgia;
+    } #contact {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 2fr 1fr 2fr;
+    } #contact input {
+        width: auto;
+    } #use {
+        background: rgba(176,196,222,0.30);
+        text-align: left;
+    } textarea {
+        width: 98%;
+        height: 100px;
+    } #popup {
+        background: rgba(176,196,222,0.30);
+    }
 </style>
 </head>
 
 <body>
-	 <div id="page">
-	 <div id="banner">
-		<h1>Catalog of Web Pages</h1>
-	 </div>
-     <ul>
-         <li>Home</li>
-         <a href="https://r3adams.github.io/grc365/grc365.html"><li>UNLV GRC 365 Web</li></a>
-         <a href="https://r3adams.github.io/grc420/index.html"><li>UNLV GRC 420 Studio III</li></a>
-         <a href="https://r3adams.github.io/gcea/gcea.html"><li>GCEA 2023</li></a>
-         <a href="https://r3adams.github.io/gcea/gcea2024.html"><li>GCEA 2024</li></a>
-     </ul>
-		<div id="text">
-        <img class="rich" src="rich2.jpg" />
-		<p>Rich Adams is Professor Emeritus at Toronto Metropolitan (formerly Ryerson) University, School of Graphic Communications Management, in Toronto. As a part-time instructor at the University of Nevada at Las Vegas (UNLV), he has been excited to get back into the computer lab to teach his favorite topic, web design.</p>
-		<p>Beginning in Spring 2023, Rich taught GRC 365 Web and User Experience Design. In fall 2023 he taught a senior seminar class, GRC 420, Design &amp; Media Studio III. The class covered current topics in graphic arts of interest to the students, including package design, user experience design, and product rebranding.</p>
-		<p>This site contains documents that Rich wrote for GRC 365 and 420 along with presentations for the Graphic Communications Education Association (GCEA) annual meeting.</p>
-		</div>
-	</div>
+    <div id="page">
+
+        <img id="logo" src="UNLV-Arch-Color.png" />
+        <h1>Request for Fake Web Site</h1>
+        <p>This sample shows some of the fields you can use to make online forms, including the input and select fields. Note the use of the grid layout to align the text fields. Also only one of the radio buttons can be selected because they all have the same name, whereas multiple checkboxes can be clicked. To collect the data, the Submit button would need to be connected to a PHP server.</p>
+        <form action="post">
+        <div id="contact">
+        <label for="firstname">First Name</label><input id="firstname" type="text" label="firstname">
+          <label style="margin-left: 12px;" for="lastname">Last Name</label><input type="text" label="lastname">
+          <label for="email">Email</label> <input type="text" id="email" label="email">
+        </div>
+        <div id="use">
+        Primary use<br/>
+          <input type="radio" id="personal" name="use" value="personal" />
+          <label for="html">Personal</label><br>
+          <input type="radio" id="educational" name="use" value="CSS" />
+          <label for="css">Educational</label><br>
+          <input type="radio" id="commercial" name="use" value="Commercial" />
+          <label for="commercial">Commercial</label>
+        </div>
+        <div id="type">
+          Types of files to be used<br/>
+          <input type="checkbox" id="HTML" name="type" value="HTML" />
+          <label for="HTML">HTML</label><br/>
+          <input type="checkbox" id="CSS" name="type" value="CSS" />
+          <label for="CSS">CSS</label><br/>
+          <input type="checkbox" id="JS" name="type" value="JavaScript" />
+          <label for="JavaScript">JavaScript</label><br/>
+          <input type="checkbox" id="other" name="type" value="other" />
+          <label for="other">Other</label><br/>
+        </div>
+        <div id="popup">
+          <label for="audience">Primary audience&nbsp;</label>
+          <select name="audience" id="audience">
+            <option value="students">Students</option>
+            <option value="faculty">Faculty</option>
+            <option value="staff">Staff</option>
+            <option value="audi">Community Members</option>
+          </select>
+        </div>
+        <div id="com">
+        <label for="comments">Comments</label><br/>
+        <textarea id="comments"></textarea>
+        <input type="submit" id="submit" />
+        </div>
+        </form>
+    </div>
 </body>
 </html>
