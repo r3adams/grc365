@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 768px;
+        height: 872px;
+        margin: 0 auto;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #logo {
+        width: 100px;
+        margin: 24px 36px 0 36px;
+        float: left;
+    } h1 {
+        font: 32pt/1.4em 'Rethink Sans';
+    } #page div {
+        padding: 12px;
+    } p {
+        font: italic 12pt/1.4em Georgia, serif;
+        margin: 0 24px 24px 24px;
+    } form {
+        width: 728px;
+        background: rgba(176,196,222,0.25);
+        margin: 0 auto;
+        font: 14pt/1.4em Georgia;
+    } #contact {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 2fr 1fr 2fr;
+    } #contact input {
+        width: auto;
+    } #use {
+        background: rgba(176,196,222,0.30);
+        text-align: left;
+    } textarea {
+        width: 98%;
+        height: 100px;
+    } #popup {
+        background: rgba(176,196,222,0.30);
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+
+        <img id="logo" src="UNLV-Arch-Color.png" />
+        <h1>Request for Fake Web Site</h1>
+        <p>This sample shows some of the fields you can use to make online forms, including the input and select fields. Note the use of the grid layout to align the text fields. Also only one of the radio buttons can be selected because they all have the same name, whereas multiple checkboxes can be clicked. To collect the data, the Submit button would need to be connected to a PHP server.</p>
+        <form action="post">
+        <div id="contact">
+        <label for="firstname">First Name</label><input id="firstname" type="text" label="firstname">
+          <label style="margin-left: 12px;" for="lastname">Last Name</label><input type="text" label="lastname">
+          <label for="email">Email</label> <input type="text" id="email" label="email">
+        </div>
+        <div id="use">
+        Primary use<br/>
+          <input type="radio" id="personal" name="use" value="personal" />
+          <label for="html">Personal</label><br>
+          <input type="radio" id="educational" name="use" value="CSS" />
+          <label for="css">Educational</label><br>
+          <input type="radio" id="commercial" name="use" value="Commercial" />
+          <label for="commercial">Commercial</label>
+        </div>
+        <div id="type">
+          Types of files to be used<br/>
+          <input type="checkbox" id="HTML" name="type" value="HTML" />
+          <label for="HTML">HTML</label><br/>
+          <input type="checkbox" id="CSS" name="type" value="CSS" />
+          <label for="CSS">CSS</label><br/>
+          <input type="checkbox" id="JS" name="type" value="JavaScript" />
+          <label for="JavaScript">JavaScript</label><br/>
+          <input type="checkbox" id="other" name="type" value="other" />
+          <label for="other">Other</label><br/>
+        </div>
+        <div id="popup">
+          <label for="audience">Primary audience&nbsp;</label>
+          <select name="audience" id="audience">
+            <option value="students">Students</option>
+            <option value="faculty">Faculty</option>
+            <option value="staff">Staff</option>
+            <option value="audi">Community Members</option>
+          </select>
+        </div>
+        <div id="com">
+        <label for="comments">Comments</label><br/>
+        <textarea id="comments"></textarea>
+        <input type="submit" id="submit" />
+        </div>
+        </form>
+    </div>
+</body>
+</html>
