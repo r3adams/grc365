@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Links</title>
+<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } @font-face {
+        font-family: "Roboto Medium";
+        src: url("Roboto-Medium.ttf");
+    } * {
+        margin: 0; padding: 0; box-sizing: border-box;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1228px;
+        background: white;
+        margin: 24px auto;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #banner {
+        width: 1022px;
+    } #menu {
+        width: 1022px;
+        height: 128px;
+        background: powderblue;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    } a {
+        font: 14pt/3em "Roboto Medium";
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        border: 1px solid white;
+    } a:hover {
+        background: aliceblue;
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 80%;
+        margin: 24px auto;
+    } table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 48px auto;
+        font: 13pt/1.4em Georgia;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } td, th {
+        padding: 3px 12px;
+    } tr:nth-child(2) td:nth-child(1n+1) {
+        font-style: italic;
+    } tr:nth-child(1) {
+        background: gainsboro;
+    } tr:nth-child(2n+3) {
+        background: whitesmoke;
+    } footer {
+        width: 1024px;
+        height: 240px;
+        display: flex;
+        align-items: flex-end;
+    } footer a {
+        border: none;
+    } footer a:hover {
+        background: none;
+    } footer img {
+        width: 64px;
+        margin: 12px;
+    } footer img:hover {
+        opacity: 0.50;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="https://placehold.co/1024x256?text=Links" />
+        <div id="menu">
+            <a href="grc365.html" target="_blank">Relative or Local Link</a>
+            <a href="http://www.unlv.edu">Absolute or Global Link</a>
+            <a href="info@unlv.edu" target="_blank">Email Link</a>
+            <a href="#arrow">Anchor Link</a>
+        </div>
+        <p>This page illustrates four types of links discussed in class, described in the table below, including the local or relative link, global or absolute link, email link, and anchor link.</p>
+        <p>The anchor link goes to an ID somewhere on the page. The anchor link at the top goes to the arrow at the bottom, which in turn links to the banner at the top of the page.</p>
+        <p>If you add target="_blank" to the anchor tag, the link will open in a new tab so that readers do not lose your site.</p>
+        <p>User feedback in the form of darker color was added to the links using the :hover pseudoclass, so that readers know when they are in the proper location to click.</p>
+        <table>
+            <tr><th colspan="3">Types of Links</th></tr>
+            <tr><td>Link</td><td>Definition</td><td>Format</td></tr>
+            <tr><td>Local or Relative Link</td><td>Link on your server</td><td>a href="filename.html"</td></tr>
+            <tr><td>Global or Absolute Link</td><td>Link to another site</td><td>a href="http://www.unlv.edu"</td></tr>
+            <tr><td>Email link</td><td>Link to send email</td><td>a href="mailto:info@unlv.edu"</td></tr>
+            <tr><td>Anchor Link</td><td>Link to an ID on the page</td><td>a href="#top-of-page"</td></tr>
+            <tr><td colspan="3">Add target="_blank" to open the link in new tab.</td></tr>
+        </table>
+        <footer>
+            <a href="#banner"><img id="arrow" src="arrow.gif" /></a>
+        </footer>
+    </div>
+</body>
+</html>
