@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript with Chat AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Paprika&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Michelangelo;
+        src: url("OPTIMichaelAngelo.otf");
+    } @font-face {
+        font-family: Roboto;
+        src: url("Roboto-Medium.ttf");
+    } @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1228px;
+        background: white;
+        margin: 0 auto;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } #links {
+        width: 768px;
+        height: 350px;
+        margin: 48px auto;
+        display: grid;
+        grid-template: 300px 50px / 384px 384px;
+        justify-items: center;
+        text-align: center;
+    } h1.title {
+        font: 48pt/1.4em 'Nova Mono';
+        text-align: center;
+        text-shadow: 2px 3px 6px turquoise;
+    } p.text {
+        font: 15pt/1.4em Georgia;
+        width: 70ch;
+        margin: 24px auto;
+    } img {
+        width: 240px;
+        height: auto;
+        filter: drop-shadow(2px 3px 6px gray);
+    } img.alice {
+        grid-area: 1/1;
+    } img.moby {
+        grid-area: 1/2;
+    } p.alicecap {
+        grid-area: 2/1;
+        font: 15pt/1.4em Georgia;
+    } p.mobycap {
+        grid-area: 2/2;
+        font: 15pt/1.4em Georgia;
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+<h1 class="title">JavaScript with ChatAI</h1>
+<p class="text">The two linked pages* demonstrate how the artificial intelligence site, <a href="www.chatai.com" target="_blank">ChatAI.com</a>, can be used to help write complex JavaScript programs for the web.</p>
+<p class="text">According to itself, &ldquo;ChatAI is an advanced conversational AI developed using machine learning and natural language processing techniques. It was trained on diverse datasets to understand and generate human-like text. In web design, ChatAI can assist by providing coding suggestions, troubleshooting issues, and offering creative design ideas, enhancing productivity and creativity.&rdquo;</p>
+<p class="text">Prompt for above: Write a 50-word description of ChatAI, including how it was developed and how it can be used for web design.</p>
+<p class="text">Click the links below for two examples.</p>
+<div id="links">
+<a href="alice-type.html">
+<img class="alice" src="alice-in-the-country.png" />
+</a>
+<a href="moby-contrast.html">
+<img class="moby" src="whale-304629_640.png" />
+</a>
+<p class="alicecap">Variable Type Size</p>
+<p class="mobycap">Variable Contrast</p>
+</div>
+<p class="text" style="font-size: 12pt; font-style: italic; margin-top: 72px;">* Text for &ldquo;Alice in Wonderland&rdquo; and &ldquo;Moby Dick&rdquo; courtesy of <a href="www.gutenberg.org" target="_blank">The Gutenberg Project</a>. PNG images courtesy of <a href="www.pngtree.com" target="_blank">PNGTree.com</a>.</p>
+</div>
+</body>
+</html>
