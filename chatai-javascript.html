@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JavaScript with Chat AI</title>
 <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Paprika&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <style>
     @font-face {
         font-family: Michelangelo;
@@ -54,8 +55,57 @@
     } p.mobycap {
         grid-area: 2/2;
         font: 15pt/1.4em Georgia;
+    } nav {
+        width: 864px;
+        margin: 24px auto;
+        background-color: gray;
+        box-shadow: 1px 2px 3px turquoise;
+        font-family: Arial, sans-serif;
+    } .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    } .menu > li {
+        position: relative;
+    } .menu > li > a {
+        display: block;
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+    } .menu > li > a:hover {
+        background-color: #575757;
+    } .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #444;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+    } .submenu li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    } .submenu li a:hover {
+        background-color: dimgray;
     }
 </style>
+<script>
+    $(document).ready(function() {
+    $('.dropdown').hover(
+    
+    function() {
+    $(this).children('.submenu').stop(true, true).slideDown(333);
+    },
+
+    function() {
+    $(this).children('.submenu').stop(true, true).slideUp(333);
+    } ); });
+</script>
 </head>
 
 <body>
@@ -63,8 +113,23 @@
 <h1 class="title">JavaScript with ChatAI</h1>
 <p class="text">The two linked pages* demonstrate how the artificial intelligence site, <a href="www.chatai.com" target="_blank">ChatAI.com</a>, can be used to help write complex JavaScript programs for the web.</p>
 <p class="text">According to itself, &ldquo;ChatAI is an advanced conversational AI developed using machine learning and natural language processing techniques. It was trained on diverse datasets to understand and generate human-like text. In web design, ChatAI can assist by providing coding suggestions, troubleshooting issues, and offering creative design ideas, enhancing productivity and creativity.&rdquo;</p>
-<p class="text">Prompt for above: Write a 50-word description of ChatAI, including how it was developed and how it can be used for web design.</p>
-<p class="text">Click the links below for two examples.</p>
+<p class="text">Prompt for above paragraph: Write a 50-word description of ChatAI, including how it was developed and how it can be used for web design.</p>
+<p class="text">The menu below was written by Chat AI and uses the <a href="https://www.jquery.com" target="_blank">jQuery</a> JavaScript library&rsquo;s &ldquo;Slide down&rdquo; function. The two links below show two examples written with regular JavaScript.</p>
+<nav>
+<ul class="menu">
+<li><a href="#">Link 1</a></li>
+<li class="dropdown">
+<a href="#">Link 2</a>
+<ul class="submenu">
+<li><a href="#">Sublink 1</a></li>
+<li><a href="#">Sublink 2</a></li>
+<li><a href="#">Sublink 3</a></li>
+</ul>
+</li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#" style="color: paleturquoise; margin-left: 300px;">jQuery menu created with Chat AI</a></li>
+</ul>
+</nav>
 <div id="links">
 <a href="alice-type.html">
 <img class="alice" src="alice-in-the-country.png" />
