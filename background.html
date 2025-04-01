@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Background Images</title>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Candara;
+            src: url("Candara.ttf");
+        } h1 {
+            font: 48pt/1.4em 'Changa One';
+            text-align: center;
+            color: white;
+            text-shadow: 1px 2px 2px dimgray;
+        } #backgroundDiv {
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 2.0s ease-in-out;
+        } figcaption {
+            font: italic 10pt/1.4em Candara;
+        } figure {
+            width: 1024px;
+            margin: 0 auto;
+        } p {
+            font: 14pt/1.4em Candara;
+            width: 50%;
+            margin: -24px auto;
+            background: rgba(255,255,255,0.33);
+            padding: 18px;
+            box-shadow: 0 0 12px rgba(255,255,255,0.33);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body id="backgroundDiv">
+    <figcaption>Images courtesy of Pixabay</figcaption>
+    <h1>Background Image Changer</h1>
+    <p>For this page with changing background images, I asked ChatGPT and DeepSeek to “Write a JavaScript program that changes the background image of a &lt;div&gt; element every 4 seconds.”</p>
+
+    <script>
+       const images = [
+           'url("image1.jpg")',
+           'url("image2.jpg")',
+           'url("image3.jpg")',
+           'url("image4.jpg")'
+       ];
+
+       let index = 0;
+       const div = document.getElementById("backgroundDiv");
+
+       function changeBackground() {
+           div.style.backgroundImage = images[index];
+           index = (index + 1) % images.length;
+       }
+
+       setInterval(changeBackground, 3000);
+
+        // Initial call to set first background
+        changeBackground();
+    </script>
+</body>
+</html>
