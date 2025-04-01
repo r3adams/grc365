@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        max-width: 100%;
+        height: 1364px;
+        background: white;
+        border: 1px solid darkgray;
+        margin: 24px auto;
+    } header {
+        width: 100%;
+        max-width: 100%;
+        height: 576px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr;
+        justify-content: center;
+        background: url("thread-7743356_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    } header a {
+        color: black;
+        font: bold 12pt/1.4em Helvetica, Arial, sans-serif;
+        list-style: none;
+        width: 144px;
+        height: 46px;
+        text-align: center;
+        grid-area: 1/1;
+        margin: 12px auto;
+        padding: 12px;
+        background: rgba(255,255,255,0.67);
+        text-decoration: none;
+    } header a:hover {
+        background: rgba(255,255,255,0.87);
+    } header p {
+        font: italic 12pt/1.4em Helvetica, Arial, sans-serif;
+        color: white;
+        grid-area: 3/1;
+        margin: 156px 0 0 12px;
+    } h1 {
+        font: 64pt/1.4em 'Boldonse';
+        color: white;
+        text-align: center;
+        text-shadow: 2px 3px 0 black;
+        grid-area: 2/1;
+    } footer {
+        width: 100%;
+    } footer p {
+        width: 92.5%;
+        margin: 0 auto 24px auto;
+        font: 14pt/1.4em Helvetica, Arial, sans-serif;
+    } main {
+        width: 100%;
+        max-width: 100%;
+        height: 652px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+        grid-gap: 12px;
+        justify-items: center;
+        align-content: center;
+        padding: 24px
+    } main div {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font: bold 14pt/1.4em Helvetica, Arial, sans-serif;
+    } main div:nth-child(1) {
+        background: rgb(221,48,33);
+    } main div:nth-child(2) {
+        background: rgb(219,109,49);
+    } main div:nth-child(3) {
+        background: rgb(192,150,55);
+    } main div:nth-child(4) {
+        background: rgb(181,38,25);
+    } main div:nth-child(5) {
+        background: rgb(69,13,120);
+    } main div:nth-child(6) {
+        background: rgb(205,127,172);
+    } main div:nth-child(7) {
+        background: rgb(108,172,76);
+    } main div:nth-child(8) {
+        background: rgb(57,127,61);
+    } main div:nth-child(9) {
+        background: rgb(62,139,189);
+    } main div:nth-child(10) {
+        background: rgb(86,142,181);
+    } main div:nth-child(11) {
+        background: rgb(76,160,152);
+    } main div:nth-child(12) {
+        background: lavender;
+    } main div:nth-child(13) {
+        background: rgb(21,48,140);
+    } main div:nth-child(14) {
+        background: rgb(23,35,72);
+    } main div:nth-child(15) {
+        background: rgb(196,196,198);
+    } main div:nth-child(16) {
+        background: rgb(142,142,142);
+    } main div:nth-child(17) {
+        background: white;
+        border: 1px dashed darkgray;
+    } main div:nth-child(18) {
+        background: black;
+    } @media only screen and (max-width: 1000px) {
+        #page {
+            height: 1450px;
+        } main {
+            height: 700px;
+            grid-template: repeat(5, 1fr) / repeat(5, 1fr);        }
+    } @media only screen and (max-width: 835px) {
+        #page {
+            height: 1650px;
+        } main {
+            height: 850px;
+            grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+        }
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <a href="https://mikeydesigns.com/product/screen-print-catalog-template/" target="_blank">
+            Model Page
+            </a>
+            <h1>Embroidery Thread</h1>
+            <p>Photo by Papsy on Pixabay</p>
+        </header>
+        <main>
+            <div>Red</div>
+            <div>Orange</div>
+            <div>Brown</div>
+            <div>Crimson</div>
+            <div>Dark Purple</div>
+            <div>Light Purple</div>
+            <div>Light Green</div>
+            <div>Dark Green</div>
+            <div>Medium blue</div>
+            <div>Ocean Blue</div>
+            <div>Turquoise</div>
+            <div style="color: black;">Lavender</div>
+            <div>Dark Blue</div>
+            <div>Navy Blue</div>
+            <div style="color: dimgray;">Light Gray</div>
+            <div>Dark Gray</div>
+            <div style="color: dimgray;">White</div>
+            <div>Black</div>
+        </main>
+        <footer>
+        <p><b>How it was done.</b> The &lt;main&gt; section containing the 18 color squares was set to display: grid, with 3 rows and 6 columns [grid-template: repeat(3, 1fr / repeat(6, 1fr);]. An @media query for 835px shrinks the layout for cell phones to 6 rows and 4 columns. In between, a second media query at 1000px transitions to 5 columns and 4 rows so all squares are visible down to cell phone resolution.</p>
+        </footer>
+    </div>
+</body>
+</html>
