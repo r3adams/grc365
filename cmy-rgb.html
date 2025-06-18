@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chart of Named Web Colors | by RGB</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+	h1, p {
+		font-family: Roboto;
+	} h1 {
+		font-size: 18pt;
+		color: dimgray;
+		text-align: center;
+	} p {
+		font-size: 12pt;
+		width: 450px;
+		margin: 6px auto;
+	} #buttons {
+		width: 778px;
+		margin: 24px auto;
+		// background: pink;
+	} button {
+		width: 124px;
+		height: 36px;
+		border-radius: 6px;
+		font-weight: bold;
+	} button.green {
+		background: lightgreen;
+	} button.gray {
+		background: lightgray;
+	} button:hover {
+		box-shadow: 2px 3px 6px lightgray;
+	} table {
+		border-collapse: collapse;
+		border: 1px solid gainsboro;
+		font-family: Roboto;
+		margin: 24px auto;
+	} th {
+		text-align: center;
+		border-left: 1px solid gainsboro;
+		border-bottom: 1px solid gainsboro;
+		padding: 6px 0;
+		background: whitesmoke;
+	} td {
+		vertical-align: top;
+		padding: 3px 0 0 3px;
+	} td:nth-child(odd) {
+		border-left: 1px solid gainsboro;
+	} .color {
+		width: 125px;
+		height: 125px;
+		background: pink;
+		margin: 0 6px 3px 6px;
+	} #lightyellow {
+		background: lightyellow;
+		// border: 1px dashed gray;
+	} #oldlace {
+		background: oldlace;
+	} #cornsilk {
+		background: cornsilk;
+	} #beige {
+		background: beige;
+	} #lemonchiffon {
+		background: lemonchiffon;
+	} #lightgoldenrodyellow {
+		background: lightgoldenrodyellow;
+	} #antiquewhite {
+		background: antiquewhite;
+	} #blanchedalmond {
+		background: blanchedalmond;
+	} #moccasin {
+		background: moccasin;
+	} #navajowhite {
+		background: navajowhite;
+	} #palegoldenrod {
+		background: palegoldenrod;
+	} #khaki {
+		background: khaki;
+	} #burlywood {
+		background: burlywood;
+	} #yellow {
+		background: yellow;
+	} #bisque {
+		background: bisque;
+	} #gold {
+		background: gold;
+	} #goldenrod {
+		background: goldenrod;
+	} #lavender {
+		background: lavender;
+	} #violet {
+		background: violet;
+	} #orchid {
+		background: orchid;
+	} #fuchsia {
+		background: fuchsia;
+	} #mediumorchid {
+		background: mediumorchid;
+	} #mediumpurple {
+		background: mediumpurple;
+	} #palevioletred {
+		background: palevioletred;
+	} #blueviolet {
+		background: blueviolet;
+	} #darkorchid {
+		background: darkorchid;
+	} #darkviolet {
+		background: darkviolet;
+	} #indigo {
+		background: indigo;
+	} #paleturquoise {
+		background: paleturquoise;
+	} #aquamarine {
+		background: aquamarine;
+	} #aqua {
+		background: aqua;
+	} #turquoise {
+		background: turquoise;
+	} #mediumturquoise {
+		background: mediumturquoise;
+	} #mediumaquamarine {
+		background: mediumaquamarine;
+	} #darkturquoise {
+		background: darkturquoise;
+	} #darkcyan {
+		background: darkcyan;
+	} #teal {
+		background: teal;
+	} #royalblue {
+		background: royalblue;
+	} #darkblue {
+		background: darkblue;
+	} #navy {
+		background: navy;
+	}
+</style>
+</head>
+
+<body>
+<h1>Chart of Named Yellow, Magenta, and Cyan Colors | Arranged by RGB</h1>
+<p>RGB = average of red, green, and blue values (higher is lighter)</p>
+<p>L* = CIELAB L* or lightness value (higher is lighter)</p>
+	<div id="buttons">
+		<a href="colorbars.html"><button id="home" class="green">Home</button></a>
+		<a href="rgb-rgb.html"><button id="rgb" class="green">WRGB by RGB</button></a>
+		<a href="rgb-lstar.html"><button id="lstar" class="green">WRGB by L*</button></a>
+		<button id="cmy" class="gray">CMY by RGB</button>
+		<a href="cmy-lstar.html"><button id="cmylstar" class="green">CMY by L*</button></a>
+		<a href="demo_color_names.htm" target="_blank"><button id="demo" class="green">Named Palette</button></a>
+	</div>
+<table>
+	<tr>
+		<th colspan="2">Yellow</th><th colspan="2">Magenta</th><th colspan="2">Cyan</th>
+		</tr>
+	<tr>
+	<td>lightyellow<br/>RGB 245<br/>L* 99</td><td><div class="color" id="lightyellow"></div></td>
+	<td>lavender<br/>RGB 237<br/>L* 92</td><td><div class="color" id="lavender"></div></td>
+	<td>paleturquoise<br/>RGB 217<br/>L* 90</td><td><div class="color" id="paleturquoise"></div></td>
+	</tr>
+	<tr>
+	<td>oldlace<br/>RGB 243<br/>L* 97</td><td><div class="color" id="oldlace"></div></td>
+	<td>violet<br/>RGB 202<br/>L* 69</td><td><div class="color" id="violet"></div></td>
+	<td>aquamarine<br/>RGB 198<br/>L* 92</td><td><div class="color" id="aquamarine"></div></td>
+	</tr>
+	<tr>
+	<td>cornsilk<br/>RGB 241<br/>L* 98</td><td><div class="color" id="cornsilk"></div></td>
+	<td>orchid<br/>RGB 181<br/>L* 62</td><td><div class="color" id="orchid"></div></td>
+	<td>aqua, cyan<br/>RGB 170<br/>L* 91</td><td><div class="color" id="aqua"></div></td>
+	</tr>
+	<tr>
+	<td>beige<br/>RGB 237<br/>L* 96</td><td><div class="color" id="beige"></div></td>
+	<td>fuchsia, magenta<br/>RGB 170<br/>L* 60</td><td><div class="color" id="fuchsia"></div></td>
+	<td>turquoise<br/>RGB 165<br/>L* 81</td><td><div class="color" id="turquoise"></div></td>
+	</tr>
+	<tr>
+	<td>lemonchiffon<br/>RGB 237<br/>L* 98</td><td><div class="color" id="lemonchiffon"></div></td>
+	<td>mediumorchid<br/>RGB 161<br/>L* 60</td><td><div class="color" id="mediumorchid"></div></td>
+	<td>mediumturquoise<br/>RGB 162<br/>L* 77</td><td><div class="color" id="mediumturquoise"></div></td>
+	</tr>
+	<tr>
+	<td>lightgoldenrodyellow<br/>RGB 237<br/>L* 98</td><td><div class="color" id="lightgoldenrodyellow"></div></td>
+	<td>mediumpurple<br/>RGB 159<br/>L* 53</td><td><div class="color" id="mediumpurple"></div></td>
+	<td>mediumaquamarine<br/>RGB 159<br/>L* 76</td><td><div class="color" id="mediumaquamarine"></div></td>
+	</tr>
+	<tr>
+	<td>antiquewhite<br/>RGB 233<br/>L* 94</td><td><div class="color" id="antiquewhite"></div></td>
+	<td>palevioletred<br/>RGB 159<br/>L* 55</td><td><div class="color" id="palevioletred"></div></td>
+	<td>darkturquoise<br/>RGB 138<br/>L* 75</td><td><div class="color" id="darkturquoise"></div></td>
+	</tr>
+	<tr>
+	<td>blanchedalmond<br/>RGB 232<br/>L* 94</td><td><div class="color" id="blanchedalmond"></div></td>
+	<td>blueviolet<br/>RGB 136<br/>L* 61</td><td><div class="color" id="blueviolet"></div></td>
+	<td>darkcyan<br/>RGB 93<br/>L* 52</td><td><div class="color" id="darkcyan"></div></td>
+	</tr>
+	<tr>
+	<td>moccasin<br/>RGB 221<br/>L* 92</td><td><div class="color" id="moccasin"></div></td>
+	<td>darkorchid<br/>RGB 136<br/>L* 41</td><td><div class="color" id="darkorchid"></div></td>
+	<td>teal<br/>RGB 85<br/>L* 48</td><td><div class="color" id="teal"></div></td>
+	</tr>
+	<tr>
+	<td>navajowhite<br/>RGB 217<br/>L* 90</td><td><div class="color" id="navajowhite"></div></td>
+	<td>darkviolet<br/>RGB 120<br/>L* 43</td><td><div class="color" id="darkviolet"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td>palegoldenrod<br/>RGB 213<br/>L* 91</td><td><div class="color" id="palegoldenrod"></div></td>
+	<td>indigo<br/>RGB 68<br/>L* 39</td><td><div class="color" id="indigo"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td>khaki<br/>RGB 213<br/>L* 91</td><td><div class="color" id="khaki"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td>burlywood<br/>RGB 180<br/>L* 77</td><td><div class="color" id="burlywood"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<tr>
+	<td>yellow<br/>RGB 170<br/>L* 98</td><td><div class="color" id="yellow"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<td>bisque<br/>RGB 160<br/>L* 92</td><td><div class="color" id="bisque"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td>gold<br/>RGB 157<br/>L* 87</td><td><div class="color" id="gold"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td>goldenrod<br/>RGB 138<br/>L* 72</td><td><div class="color" id="goldenrod"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

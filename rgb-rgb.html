@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chart of Named Web Colors | by RGB</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+	h1, p {
+		font-family: Roboto;
+	} h1 {
+		font-size: 18pt;
+		color: dimgray;
+		text-align: center;
+	} p {
+		font-size: 12pt;
+		width: 450px;
+		margin: 6px auto;
+	} #buttons {
+		width: 778px;
+		margin: 24px auto;
+		// background: pink;
+	} button {
+		width: 124px;
+		height: 36px;
+		border-radius: 6px;
+		font-weight: bold;
+	} button.green {
+		background: lightgreen;
+	} button.gray {
+		background: lightgray;
+	} button:hover {
+		box-shadow: 2px 3px 6px lightgray;
+	} table {
+		border-collapse: collapse;
+		border: 1px solid gainsboro;
+		font-family: Roboto;
+		margin: 24px auto;
+	} th {
+		text-align: center;
+		border-left: 1px solid gainsboro;
+		border-bottom: 1px solid gainsboro;
+		padding: 6px 0;
+		background: whitesmoke;
+	} td {
+		vertical-align: top;
+		padding: 3px 0 0 3px;
+	} td:nth-child(odd) {
+		border-left: 1px solid gainsboro;
+	} .color {
+		width: 125px;
+		height: 125px;
+		background: pink;
+		margin: 0 6px 3px 6px;
+	} #white {
+		background: white;
+		border: 1px dashed gray;
+	} #whitesmoke {
+		background: whitesmoke;
+	} #gainsboro {
+		background: gainsboro;
+	} #lightgray {
+		background: lightgray;
+	} #silver {
+		background: silver;
+	} #darkgray {
+		background: darkgray;
+	} #gray {
+		background: gray;
+	} #dimgray {
+		background: dimgray;
+	} #pink {
+		background: pink;
+	} #tomato {
+		background: tomato;
+	} #orangered {
+		background: orangered;
+	} #crimson {
+		background: crimson;
+	} #red {
+		background: red;
+	} #firebrick {
+		background: firebrick;
+	} #darkred {
+		background: darkred;
+	} #palegreen {
+		background: palegreen;
+	} #lightgreen {
+		background: lightgreen;
+	} #mediumspringgreen {
+		background: mediumspringgreen;
+	} #chartreuse {
+		background: chartreuse;
+	} #springgreen {
+		background: springgreen;
+	} #lawngreen {
+		background: lawngreen;
+	} #seagreen {
+		background: seagreen;
+	} #lime {
+		background: lime;
+	} #green {
+		background: green;
+	} #darkgreen {
+		background: darkgreen;
+	} #azure {
+		background: azure;
+	} #aliceblue {
+		background: aliceblue;
+	} #powderblue {
+		background: powderblue;
+	} #lightblue {
+		background: lightblue;
+	} #lightsteelblue {
+		background: lightsteelblue;
+	} #lightskyblue {
+		background: lightskyblue;
+	} #skyblue {
+		background: skyblue;
+	} #cornflowerblue {
+		background: cornflowerblue;
+	} #dodgerblue {
+		background: dodgerblue;
+	} #blue {
+		background: blue;
+	} #royalblue {
+		background: royalblue;
+	} #darkblue {
+		background: darkblue;
+	} #navy {
+		background: navy;
+	}
+</style>
+</head>
+
+<body>
+<h1>Chart of Named Gray, Red, Green, and Blue Colors | Arranged by RGB</h1>
+<p>RGB = average of red, green, and blue values (higher is lighter)</p>
+<p>L* = CIELAB L* or lightness value (higher is lighter)</p>
+	<div id="buttons">
+		<a href="colorbars.html"><button id="home" class="green">Home</button></a>
+		<button id="rgb" class="gray">WRGB by RGB</button>
+		<a href="rgb-lstar.html"><button id="lstar" class="green">WRGB by L*</button></a>
+		<a href="cmy-rgb.html"><button id="cmy-rgb" class="green">CMY by RGB</button></a>
+		<a href="cmy-lstar.html"><button id="cmylstar" class="green">CMY by L*</button></a>
+		<a href="demo_color_names.htm" target="_blank"><button id="demo" class="green">Named Palette</button></a>
+	</div>
+<table>
+	<tr>
+		<th colspan="2">Gray</th><th colspan="2">Red</th><th colspan="2">Green</th><th colspan="2">Blue</th>
+		</tr>
+	<tr>
+	<td>white<br/>RGB 255<br/>L* 100</td><td><div class="color" id="white"></div></td>
+	<td>pink<br/>RGB 217<br/>L* 85</td><td><div class="color" id="pink"></div></td>
+	<td>palegreen<br/>RGB 185<br/>L* 91</td><td><div class="color" id="palegreen"></div></td>
+	<td>azure<br/>RGB 255<br/>L* 99</td><td><div class="color" id="azure"></div></td>
+	</tr>
+	<tr>
+	<td>whitesmoke<br/>RGB 245<br/>L* 97</td><td><div class="color" id="whitesmoke"></div></td>
+	<td>tomato<br/>RGB 142<br/>L* 63</td><td><div class="color" id="tomato"></div></td>
+	<td>lightgreen<br/>RGB 175<br/>L* 87</td><td><div class="color" id="lightgreen"></div></td>
+	<td>aliceblue<br/>RGB 248<br/>L* 97</td><td><div class="color" id="aliceblue"></div></td>
+	</tr>
+	<tr>
+	<td>gainsboro<br/>RGB 220<br/>L* 88</td><td><div class="color" id="gainsboro"></div></td>
+	<td>orangered<br/>RGB 108<br/>L* 59</td><td><div class="color" id="orangered"></div></td>
+	<td>mediumspringgreen<br/>RGB 135<br/>L* 87</td><td><div class="color" id="mediumspringgreen"></div></td>
+	<td>powderblue<br/>RGB 210<br/>L* 86</td><td><div class="color" id="powderblue"></div></td>
+	</tr>
+	<tr>
+	<td>lightgray<br/>RGB 211<br/>L* 85</td><td><div class="color" id="lightgray"></div></td>
+	<td>crimson<br/>RGB 98<br/>L* 48</td><td><div class="color" id="crimson"></div></td>
+	<td>charteuse<br/>RGB 127<br/>L* 90</td><td><div class="color" id="chartreuse"></div></td>
+	<td>lightblue<br/>RGB 206<br/>L* 84</td><td><div class="color" id="lightblue"></div></td>
+	</tr>
+	<tr>
+	<td>silver<br/>RGB 192<br/>L* 77</td><td><div class="color" id="silver"></div></td>
+	<td>red<br/>RGB 85<br/>L* 54</td><td><div class="color" id="red"></div></td>
+	<td>springgreen<br/>RGB 127<br/>L* 89</td><td><div class="color" id="springgreen"></div></td>
+	<td>lightsteelblue<br/>RGB 198<br/>L* 78</td><td><div class="color" id="lightsteelblue"></div></td>
+	</tr>
+	<tr>
+	<td>darkgray<br/>RGB 169<br/>L* 69</td><td><div class="color" id="darkgray"></div></td>
+	<td>firebrick<br/>RGB 82<br/>L* 40</td><td><div class="color" id="firebrick"></div></td>
+	<td>lawngreen<br/>RGB 126<br/>L* 88</td><td><div class="color" id="lawngreen"></div></td>
+	<td>lightskyblue<br/>RGB 197<br/>L* 79</td><td><div class="color" id="lightskyblue"></div></td>
+	</tr>
+	<tr>
+	<td>gray<br/>RGB 128<br/>L* 54</td><td><div class="color" id="gray"></div></td>
+	<td>darkred<br/>RGB 46<br/>L* 27</td><td><div class="color" id="darkred"></div></td>
+	<td>seagreen<br/>RGB 91<br/>L* 52</td><td><div class="color" id="seagreen"></div></td>
+	<td>skyblue<br/>RGB 192<br/>L* 78</td><td><div class="color" id="skyblue"></div></td>
+	</tr>
+	<tr>
+	<td>dimgray<br/>RGB 105<br/>L* 45</td><td><div class="color" id="dimgray"></div></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>lime<br/>RGB 85<br/>L* 87</td><td><div class="color" id="lime"></div></td>
+	<td>cornflowerblue<br/>RGB 162<br/>L* 61</td><td><div class="color" id="cornflowerblue"></div></td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>green<br/>RGB 43<br/>L* 47</td><td><div class="color" id="green"></div></td>
+	<td>dodgerblue<br/>RGB 143<br/>L* 58</td><td><div class="color" id="dodgerblue"></div></td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>darkgreen<br/>RGB 33<br/>L* 36</td><td><div class="color" id="darkgreen"></div></td>
+	<td>blue<br/>RGB 85<br/>L* 30</td><td><div class="color" id="blue"></div></td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>royalblue<br/>RGB 57<br/>L* 47</td><td><div class="color" id="royalblue"></div></td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>darkblue<br/>RGB 46<br/>L* 13</td><td><div class="color" id="darkblue"></div></td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>navy<br/>RGB 43<br/>L* 12</td><td><div class="color" id="navy"></div></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Web Color Bars</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+<style>
+	* {margin: 0; padding: 0;}
+	#banner {
+		width: 1366px;
+		max-width: 100%;
+		height: 212px;
+		background: lightblue;
+		margin: 0 auto;
+		font-family: Lobster;
+		color: dimgray;
+		text-align: center;
+	} #banner h1 {
+		font-size: 48pt;
+		font-weight: normal;
+		line-height: 2em;
+	} #banner h3 {
+		font-size: 24pt;
+		font-weight: normal;
+		line-height: 0.5em;
+	} td p {
+		font-family: Roboto;
+		font-style: italic;
+		font-size: 12pt;
+		padding-top: 12px;
+	} #explanation {
+		font-family: Roboto;
+		font-size: 12pt;
+		line-height: 1.4em;
+		width: 712px;
+		margin: 0 auto;
+	} #explanation p {
+		padding: 6px 0;	
+	} #buttons {
+		width: 778px;
+		margin: 24px auto;
+		// background: pink;
+	} button {
+		width: 124px;
+		height: 36px;
+		border-radius: 6px;
+		font-weight: bold;
+	} button.green {
+		background: lightgreen;
+	} button.gray {
+		background: lightgray;
+	} button:hover {
+		box-shadow: 2px 3px 6px lightgray;
+	} #page {
+		width: 1366px;
+		max-width: 100%;
+		height: 1654px;
+		margin: 0 auto;
+		background: white;
+		padding-top: 48px;
+	} table {
+		margin: 12px auto;
+	} td {
+		width: 100px;
+		height: 100px;
+		padding: 3px;
+		// border: 1px dashed dimgray;
+		vertical-align: top;
+		font-family: Roboto;
+	} #td1, #td2 {
+		border: 1px dashed dimgray;
+/* ---=== GRAY ===--- */
+	} #gray #td1 {
+		background: white;
+	} #gray #td2 {
+		background: whitesmoke;
+	} #gray #td3 {
+		background: gainsboro;
+	} #gray #td4 {
+		background: lightgray;
+	} #gray #td5 {
+		background: silver;
+	} #gray #td6 {
+		background: darkgray;
+	} #gray #td7 {
+		background: gray;
+	} #gray #td8 {
+		background: dimgray;
+	} #gray #td9 {
+		background: none;
+		border: none;
+	} #gray #td10 {
+		background: none;
+		border: none;
+	} @media only screen and (max-width: 750px) {
+		#banner {
+			height: 48vw;
+			font-size: 8vw;
+			line-height: 24vw;
+		}
+	}
+</style>
+</head>
+<body>
+	<div id="banner">
+		<h1>Web Color Bars</h1>
+		<h3>Rich Adams</h3>
+	</div>
+	<div id="explanation">
+	<div id="buttons">
+		<a href="colorbars.html"><button id="home" class="gray">Home</button></a>
+		<a href="rgb-rgb.html"><button id="rgb" class="green">WRGB by RGB</button></a>
+		<a href="rgb-lstar.html"><button id="lstar" class="green">WRGB by L*</button></a>
+		<a href="cmy-rgb.html"><button id="cmy" class="green">CMY by RGB</button></a>
+		<a href="cmy-lstar.html"><button id="cmylstar" class="green">CMY by L*</button></a>
+		<a href="demo_color_names.htm" target="_blank"><button id="demo" class="green">Named Palette</button></a>
+	</div>
+
+	<p>This study is intended to provide a general reference on the light-dark sequence of the major named color groups.</p>
+	<p>Color in HTML and CSS code for the web can be specified as named colors, RGB and RGBA on a scale of 0–255 levels (&ldquo;A&rdquo; for opacity on a scale of 0–1.00, where 1.00 is opaque), and hexadecimal (3 or 6 base-16 numbers on a scale of 0–F).</p>
+	<p>The <a href="demo_color_names.htm">named color palette</a> consists of 140 colors that can be specified by name, such as “aliceblue,” “chartreuse,” and “lavender.” They include colors that generally fall within the categories of gray, red, green, blue, cyan (turquoise or aqua), magenta (purple, lavender), and yellow (beige). </p>
+	<p>Named colors make it easy to identify colors by name, whereas from RGB and Hex specifications it may be difficult to identify the color. At the same time, using named colors makes it difficult to pick out the desired shade, e.g., if you want to use gray instead of black for a border, should you use gray, darkgray, or dimgray? In the colorbar below, note that darkgray is actually lighter than gray, and the darkest is dimgray.</p>
+	<p>In this study, named colors falling into the general categories of red, green, blue, yellow, magenta, and cyan were arranged in from light to dark based on (1) average RGB values, as an analog of print neutral density, and (2) CIELAB L* lightness value.</p>
+	<h3 style="text-align: center; padding: 12px 0;">List of Buttons</h3>
+	<ul>
+		<li>WRGB by RGB &mdash; white, red, green, and blue family of colors arranged by average RGB values, taken as an analog of neutral density</li>
+		<li>WRGB by L* &mdash; WRGB colors arranged by CIE L* values</li>
+		<li>CMY by RGB &mdash; cyan, magenta, and yellow family of colors arranged by average RGB values</li>
+		<li>CMY by L* &mdash; CMY colors arranged by L*</li>
+		<li>Named Palette &mdash; Named color palette from Thompson Courseware</li>
+	</ul>
+	</div>
+	<div id="page">
+		<table id="gray">
+			<tr>
+				<td id="td1">white<br/>255 L100</td>
+				<td id="td2">whitesmoke<br/>245 L97</td>
+				<td id="td3">gainsboro<br/>220 L88</td>
+				<td id="td4">lightgray<br/>211 L85</td>
+				<td id="td5">silver<br/>192 L77</td>
+				<td id="td6">darkgray<br/>169 L69</td>
+				<td id="td7">gray<br/>128 L54</td>
+				<td id="td8" style="color: white;">dimgray<br/>105 L45</td>
+			</tr>
+			<tr>
+			<td colspan="8" style="border: none; text-align: center; padding-top: 18px;"><p>Sample of web grey colors arranged by average RGB (neutral density, higher is lighter) and LAB L* (luminance) values (labeled &ldquo;L.&rdquo;).</p></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
