@@ -18,6 +18,9 @@
 			font: 48pt/2.0em Lobster;
 			text-align: center;
             text-shadow: 1px 1px 0px red;
+        } h2 {
+            font: 36px/1.4em 'Roboto Condensed';
+            text-align: center;
         } ul {
             width: 1228px;
             max-width: 100%;
@@ -34,21 +37,6 @@
             background: rgba(173,216,230,0.50);
         } li, a {
             color: black;
-	    } #page {
-		    width: 1228px;
-		    max-width: 100%;
-		    height: auto;
-		    margin: 0 auto 48px auto;
-		    background: whitesmoke;
-		    padding: 48px 0;
-        } #header {
-            width: 624px;
-            max-width: 90%;
-            margin: 0 auto;
-            font: italic 14pt/1.4em Roboto;
-            text-align: left;
-		} #header p {
-			margin: 72px auto;
 		} #page {
 			width: 1228px;
 			max-width: 100%;
@@ -57,13 +45,24 @@
             padding: 0 0 144px 0;
 			background: whitesmoke;
         } #header {
-            width: 624px;
+            width: 1228px;
             max-width: 90%;
-            margin: 0 auto 24px auto;
-            font: italic 14pt/1.4em Roboto;
+            margin: 64px auto 24px auto;
             text-align: left;
+            background: rgba(173,216,230,0.20);
+            border: 1px solid dimgray;
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 		} #header p {
-			margin: 72px auto 36px auto;
+			margin: 18px auto 12px auto;
+        } p {
+            font: 14pt/1.4em Georgia;
+            width: 70ch;
+            margin: 24px auto;
 		} #flexbox {
 			width: 1228px;
 			max-width: 90%;
@@ -100,91 +99,123 @@
 	 <div id="banner">
 		<h1>Catalog of Web Pages</h1>
 	 </div>
-  <ul>
+    <ul>
          <a href="https://r3adams.github.io/grc365/index.html"><li>Home</li></a>
          <li>UNLV GRC 365 Web</li>       <a href="https://r3adams.github.io/grc420/index.html"><li>UNLV GRC 420 Studio</li></a>
          <a href="https://r3adams.github.io/gcea/gcea.html"><li>GCEA 2023</li></a>
          <a href="https://r3adams.github.io/gcea/gcea2024.html"><li>GCEA 2024</li></a>         <a href="https://r3adams.github.io/gcea/gcea2025.html"><li>GCEA 2025</li></a>
    </ul>
 	<div id="header">
-    <p>These web pages were created for UNLV GRC 365 Web and User Experience Design class. Click on the thumbnail to go to the respective web page.</p>
+        <h2>Demo Site</h2>
+        <img class="thumb" src="thumb_hotairballooning.jpg" />
+        <p>This demo site contains 8 pages that illustrate HTML and CSS designs covered in the course, including a basic fixed-width page, tables, the flexible box layout, forms, the grid layout, and type.</p>
     </div>
-	<div id="flexbox">
+
+    <h2>Reference Documents</h2>
+    <p>These web pages include supplementary information on the structure and styling of pages in the above Demo Document. Click on the thumbnail to go to the respective web page.</p>
+    <div id="flexbox">
 	<figure>
+
+    <!-- Basic Fixed-Width Page -->
+    <a href="alice.html" target="_blank"><img class="thumb" src="thumb-alice.jpg" /></a>
+	<figcaption>"Alice in Wonderland" site from first class.</figcaption>
+	</figure>
+	<figure>
+
+    <!--Page Sizes -->
+    <a href="https://r3adams.github.io/grc420/page-size.html" target="_blank"><img class="thumb" src="thumb-pagesizes.jpg" /></a>
+	<figcaption>Comparison of various fixed-width page sizes in pixels (px)</figcaption>
+	</figure>
+
+    <!-- Tables -->
+    <figure>
 	<a href="https://r3adams.github.io/grc365/table2.html" target="_blank"><img class="thumb" src="thumb-tables.jpg" /></a>
 	<figcaption>This demo page shows some creative effects that can be applied to tables.</figcaption>
 	</figure>
+
+    <!-- Colors -->
 	<figure>
-	<a href="https://r3adams.github.io/grc365/colorbars.html" target="_blank"><img class="thumb" src="colorbars_thumb.jpg" /></a>
+	<a href="https://r3adams.github.io/grc365/colorbars.html" target="_blank"><img class="thumb" src="thumb-colorbars.jpg" /></a>
 	<figcaption>These 6 pages show the named web colors arranged by RGB and LAB values.</figcaption>
 	</figure>
-	<figure>
-	<a href="https://r3adams.github.io/grc365/flex-grid.html" target="_blank"><img class="thumb" src="thumb-flex-grid-demo.jpg" /></a>
-	<figcaption>This demo page shows how to use the powerful flexible box and grid layouts.</figcaption>
-	</figure>
-	<figure>
-	<a href="https://r3adams.github.io/grc365/grid-catalog.html" target="_blank"><img class="thumb" src="thumb-grid-demo.jpg" /></a>
-	<figcaption>This demo page shows how to build a 4-row, 2-column catalog page using the grid layout.</figcaption>
-	</figure>
-    <figure>
-    <a href="https://r3adams.github.io/grc420/responsive-design.html" target="_blank"><img class="thumb" src="responsive-thumb.jpg" /></a>
-	<figcaption>Quick-reference guide to responsive design for fixed-width pages and the grid layout.</figcaption>
-	</figure>
-    <figure>
-    <a href="https://r3adams.github.io/grc365/responsive-grid-flex.html" target="_blank"><img class="thumb" src="responsive-grid-thumb.jpg" /></a>
-	<figcaption>Demo of responsive design using the grid and flexible box layouts.</figcaption>
-	</figure>
-    <figure>
-	<a href="https://r3adams.github.io/grc365/fireside-chat.html" target="_blank"><img class="thumb" src="thumb-fireside-chat.jpg" /></a>
-	<figcaption>This tutorial shows how to add buttons to a web page to print the page and to increase type contrast for legibility.</figcaption>
-	</figure>
-	<figure>
-	<a href="https://r3adams.github.io/grc365/jquery.html" target="_blank"><img class="thumb" src="thumb-jquery.jpg" /></a>
-	<figcaption>This tutorial shows some examples of functions available in MIT&rsquo;s free jQuery JavaScript library.</figcaption>
-	</figure>
-	<figure>
-	<a href="https://r3adams.github.io/grc365/animation.html" target="_blank"><img class="thumb" src="thumb-animation.jpg" /></a>
-	<figcaption>This tutorial shows three ways to animate an image using CSS.</figcaption>
-	</figure>
-	<figure>
-    <a href="https://r3adams.github.io/grc365/portfolio.html" target="_blank"><img class="thumb" src="thumb-portfolio.jpg" /></a>
-	<figcaption>This page illustrates a possible portfolio design using an inner div set to display: flex; and two options for enlarging the thumbnail on hover to provide user feedback.</figcaption>
-	</figure>
-	<figure>
-    <a href="https://r3adams.github.io/grc365/form.html" target="_blank"><img class="thumb" src="thumb-form.jpg" /></a>
-	<figcaption>Some of the fields you can use to create an online form.</figcaption>
-	</figure>
-	<figure>
-    <a href="https://glitch.com/edit/#!/grc365-birthday-site" target="_blank"><img class="thumb" src="thumb-mickey.jpg" /></a>
-	<figcaption>Example of a birthday site for Project 2. (The colophon explains how the site was created and acknowledges image sources.)</figcaption>
-	</figure>
-	<figure>
-    <a href="https://glitch.com/edit/#!/demo1-alice-rich-adams" target="_blank"><img class="thumb" src="thumb-alice.jpg" /></a>
-	<figcaption>"Alice in Wonderland" site from first class.</figcaption>
-	</figure>
+
+    <!-- Links -->
 	<figure>
     <a href="links.html" target="_blank"><img class="thumb" src="thumb-links.jpg" /></a>
 	<figcaption>This handout describes and provides examples of the types of links discussed in class.</figcaption>
 	</figure>
+
+    <!-- Forms -->
+	<figure>
+    <a href="https://r3adams.github.io/grc365/form.html" target="_blank"><img class="thumb" src="thumb-form.jpg" /></a>
+	<figcaption>Some of the fields you can use to create an online form.</figcaption>
+	</figure>
+
+    <!-- Animation -->
+    <figure>
+	<a href="https://r3adams.github.io/grc365/animation.html" target="_blank"><img class="thumb" src="thumb-animation.jpg" /></a>
+	<figcaption>This tutorial shows three ways to animate an image using CSS.</figcaption>
+	</figure>
+    
+    <!-- Responsive Design -->
+    <figure>
+    <a href="https://r3adams.github.io/grc420/responsive-design.html" target="_blank"><img class="thumb" src="thumb-responsive.jpg" /></a>
+	<figcaption>Quick-reference guide to responsive design for fixed-width pages and the grid layout.</figcaption>
+    </figure>
+
+    <!-- JavaScript Fireside Chat -->    
+    <figure>
+	<a href="https://r3adams.github.io/grc365/fireside-chat.html" target="_blank"><img class="thumb" src="thumb-fireside-chat.jpg" /></a>
+	<figcaption>This tutorial shows how to add buttons to a web page to print the page and to increase type contrast for legibility.</figcaption>
+	</figure>
+
+	<figure>
+	<a href="https://r3adams.github.io/grc365/jquery.html" target="_blank"><img class="thumb" src="thumb-jquery.jpg" /></a>
+	<figcaption>This tutorial shows some examples of functions available in MIT&rsquo;s free jQuery JavaScript library.</figcaption>
+	</figure>
+
+    <figure>
+    <a href="chatai-javascript.html" target="_blank"><img class="thumb" src="thumb-aijavascript.jpg" /></a>
+	<figcaption>This page links to two examples of how Chat AI was used to write JavaScript to improve page accessibility and also includes an example of jQuery written by Chat AI.</figcaption>
+	</figure>
+
+    <figure>
+    <a href="background.html" target="_blank"><img class="thumb" src="thumb-background.jpg"></a>
+	<figcaption>Sample portfolio page emphasizing photos that change in the background using a JavaScript program.</figcaption>
+	</figure>
+        
+    <!--    
+    <figure>
+    <a href="https://r3adams.github.io/grc365/responsive-grid-flex.html" target="_blank"><img class="thumb" src="responsive-grid-thumb.jpg" /></a>
+	<figcaption>Demo of responsive design using the grid and flexible box layouts.</figcaption>
+	</figure>
+
+    <figure>
+    <a href="https://r3adams.github.io/grc365/portfolio.html" target="_blank"><img class="thumb" src="thumb-portfolio.jpg" /></a>
+	<figcaption>This page illustrates a possible portfolio design using an inner div set to display: flex; and two options for enlarging the thumbnail on hover to provide user feedback.</figcaption>
+	</figure>
+
 	<figure>
     <a href="ai-test.html" target="_blank"><img class="thumb" src="thumb-ai-test.jpg" /></a>
 	<figcaption>This page contains 3 paragraphs that were written with the help of Chat AI and an accompanying image generated in Canva.</figcaption>
 	</figure>
-	<figure>
-    <a href="chatai-javascript.html" target="_blank"><img class="thumb" src="thumb-aijavascript.jpg" /></a>
-	<figcaption>This page links to two examples of how Chat AI was used to write JavaScript to improve page accessibility and also includes an example of jQuery written by Chat AI.</figcaption>
-	</figure>
-	<figure>
+
+    <figure>
     <a href="https://glitch.com/edit/#!/grid-demo-project-1" target="_blank"><img class="thumb" src="thumb-grid-layout.jpg" /></a>
 	<figcaption>Diagram of the grid layout for the Project 1 catalog page from REI Coop. Note that only item 2 has the start and end rows and columns specified in the grid-area style, the others fall into place automatically.</figcaption>
 	</figure>
-	<figure>
+
+    <figure>
     <a href="catalog-page.html" target="_blank"><img class="thumb" src="thumb-catalogpage.jpg" /></a>
 	<figcaption>Sample catalog page using the grid layout, see original page at link “Original Page” at top.</figcaption>
-	</figure>	<figure>
+	</figure>
+
+    <figure>
     <a href="background.html" target="_blank"><img class="thumb" src="thumb-background.jpg" /></a>
 	<figcaption>Sample portfolio page emphasizing photos that change in the background using a JavaScript program.</figcaption>
 	</figure>
+    -->
+        
     </div>
     </div>
     </body>
