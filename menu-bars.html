@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hot Air Ballooning with ChatGTP</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Embedded or Global Style Sheet -->
+<style>
+    * {
+        margin: 0; padding: 0;
+    } @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } body {
+        filter: background: whitesmoke;
+    } #page {
+        width: 928px;
+        height: auto;
+        background: white;
+        margin: 0 auto;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } img {
+        width: 100%;
+    } #plain-text {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } #plain-text, #menu-bar, #button-bar {
+        font: 14pt/2.5em Roboto;
+        list-style: none;
+    } #menu-bar li {
+        width: 25%;
+        height: 50px;
+        background: rgb(193,203,224);
+        float: left;
+        text-align: center;
+    } #button-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    } #button-bar li {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgb(225,124,20);
+        float: left;
+        text-align: center;
+        line-height: 5.25em;
+    } a {
+        color: black;
+        text-decoration: none;
+    } #plain-text a:hover {
+        text-shadow: 0 0 20px rgb(241,47,0);
+    } #menu-bar a li:hover {
+        background: rgba(183,193,214,0.70);
+    } #button-bar a li:hover {
+        background: rgba(225,124,20,0.70);
+    } h2 {
+        font: 700 24pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin: 48px 0 12px 0;
+        text-shadow: 2px 3px 6px rgba(225,124,20,0.67);
+    } main {
+        width: 624px;
+        margin: 72px auto;
+    } main p {
+        font: 14pt/1.4em Georgia;
+        margin: 18px 0 12px 0;
+    } hr {
+        z-index: -1;
+        margin-top: -36px;
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+<img src="daniela.jpg" />
+<h2>Plain Text Menu</h2>
+<header id="plain-text">
+    <p>Home</p>
+    <a href="#"><p>Portfolio</p></a>
+    <a href="#"><p>About</p></a>
+    <a href="#"><p>Contact</p></a>
+</header>
+<h2>Menu Bar</h2>
+<header id="menu-bar">
+    <li>Home</li>
+    <a href="#"><li>Portfolio</li></a>
+    <a href="#"><li>About</li></a>
+    <a href="#"><li>Contact</li></a>
+</header>
+<h2 style="margin-top: 124px">Button Bar</h2>
+<header id="button-bar">
+    <li>Home</li>
+    <a href="#"><li>Portfolio</li></a>
+    <a href="#"><li>About</li></a>
+    <a href="#"><li>Contact</li></a>
+</header>
+<main>
+    <p><i>Above are three examples of menus made with various tags. The :hover effects provide user feedback. Note that the Home button is not linked because we are already on the Home page.</i></p> 
+    <p><b>Plain Text Menu.</b> This menu is made from &lt;p&gt; tags in a &lt;header&gt; enclosure set to &ldquo;width: 100%;&rdquo; &ldquo;display: flex;&rdquo; and “justify-content: space-around;” which spaces the links evenly across the page. An orange drop-shadow on :hover provides user feedback.</p>
+    <p><b>Menu Bar.</b> For this menu,  “list-item” &lt;li&gt; tags, normally used for bullet points &lt;ul&gt; and numbered lists &lt;ol&gt;, have been “drafted” to help out by making a menu bar. The default block-level li’s are set to “float: left;” to arrange themselves horizontally.</p>
+    <p><b>Button Bar.</b> This menu is similar to the Menu Bar above except that the &lt;li&gt;’s have been set to “border-radius: 50%” to form circles.
+</p>
+</main>
+</div>
+</body>
+</html>
