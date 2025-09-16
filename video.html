@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Georgia;
+        src: url(Georgia.ttf);
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1375px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #banner {
+        width: 1024px;
+    } h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: brown;
+        text-shadow: 2px 3px 6px darkgray;
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+    } .float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        font: 14pt/2.0em Georgia;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169,225,245,0.80);
+    } a li {
+        color: black;
+    } a {
+        text-decoration: none;
+    } a li:hover {
+        background: rgba(169,225,245,0.50);
+    } #arrow {
+        width: 75px;
+        height: 75px;
+        grid-area: 1/1;
+    } video {
+        margin: 72px auto 36px auto;
+        display: block;
+        box-shadow: 2px 3px 6px dimgray;
+    } .icon {
+        width: 96px;
+        height: 96px;
+        border: none;
+        box-shadow: none;
+        padding-right: 96px;
+    } table {
+        width: 1024px;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="daniela.jpg" />
+        <ul>
+            <!-- Local or Relative Link -->
+            <a href="index.html"><li>Home</li></a>
+            <li>Balloon Federation of America</li>
+        </ul>
+
+        <h1>Balloon Federation of America</h1>
+        <p><img class="float-left" src="bausenhart.jpeg" />
+            <i>This tutorial showed how to place a video in a web page and how to create four types of links (relative/local, absolute/global, anchor, and email).</i><br/><br/>
+            <!-- Absolute or Global Link -->
+            The <a href="https://bfa.net" target="_blank"><b>BFA</b></a> is a 501(c)3 non-profit association dedicated to the advancement of the sport and science of lighter-than-air aviation, both hot air and gas balloons. Founded in 1961, membership in the BFA is open to anyone who shares a fascination with Lighter Than Air flight.</p>
+            <!-- Email link -->
+            <a href="mailto:info@bfa.net?subject=Web Site Inquiry"><p>Email the BFA</p></a>
+        <video width="640" height="360" controls poster="poster-natgeo-balloons.jpg">
+            <source src="natgeo-balloons.mp4">
+        </video>
+    <table>
+        <tr>
+            <td style="width: 512px;">
+             <a href="#banner">
+             <img id="arrow" src="arrow.png" />
+             </a>
+            </td>
+            <td style="width: 512px; text-align: right;">
+               <a href="https://unlv.zoom.us/rec/share/X9pKqeK8HcCjSIllIWTXl8BlDZ3HWWYYoXIJ4j8iROdluZAsevGRItyg_E8V5tx3.kCsf8omRrlbJlcKh?pwd=DFjXB1OuekJyau79YAAAIAAAACi7kMlqCvkvWdUQGkNF4fC-M27rrfx6jp7t1A2UHEJps4mc7WooB1ZCai3rJPvMXzAwMDAwNA" target="_blank">
+               <img class="icon" src="icon-video.png" />
+               </a>
+               <p style="margin: -10px 0 0 0; font-style: italic; width: 512px; padding-right: 36px;">Week 2 (9/3) Zoom Video</p>
+            </td>
+        </tr>
+        </table>        
+    </div>
+</body>
+</html>
