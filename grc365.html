@@ -46,6 +46,7 @@
 			background: whitesmoke;
         } #header {
             width: 1228px;
+            height: auto;
             max-width: 90%;
             margin: 64px auto 24px auto;
             text-align: left;
@@ -53,15 +54,16 @@
             border: 1px solid darkgray;
             border-radius: 12px;
             padding: 12px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            display: grid;
+            grid-template: auto auto auto / auto auto;
+            justify-items: center;
+        } #header h2 {
 		} #header p {
-			margin: 18px auto 12px auto;
+			width: 80%;
+            margin: 12px auto;
         } p {
             font: 14pt/1.4em Georgia;
-            width: 70ch;
+            width: 100%;
             max-width: 90%;
             margin: 24px auto;
 		} #flexbox {
@@ -107,24 +109,24 @@
          <a href="https://r3adams.github.io/gcea/gcea2024.html"><li>GCEA 2024</li></a>         <a href="https://r3adams.github.io/gcea/gcea2025.html"><li>GCEA 2025</li></a>
    </ul>
 	<div id="header">
-        <h2>Demo Site</h2>
-        <a href="https://r3adams.github.io/grc-365-new/index.html">
+        <h2 style="grid-area: 1/1;">Demo Site</h2>
+        <h2 style="grid-area: 1/2;">Completed Tutorials</h2>
+        <a style="grid-area: 2/1" href="https://r3adams.github.io/grc-365-new/index.html">
         <img class="thumb" src="thumb_hotairballooning.jpg" />
         </a>
-        <p>This demo site contains 10 pages (so far) that illustrate HTML and CSS designs covered in the course, including a basic fixed-width page, tables, the flexible box layout, forms, the grid layout, type, creative effects, and JavaScript.</p>
+        <a style="grid-area: 2/2;" href="https://r3adams.github.io/grc-365-new/index.html">
+        <img class="thumb" src="thumb-tutorials.jpg" />
+        </a>
+        <p style="grid-area: 3/1;">This demo site contains 10 pages (so far) that illustrate HTML and CSS designs covered in the course.</p>
+        <p style="grid-area: 3/2;">This site includes final tutorial demos completed throughout the course.</p>
     </div>
 
     <h2>Reference Documents</h2>
     <p>These web pages include supplementary information on the structure and styling of pages in the above Demo Site. Click on the thumbnail to go to the respective web page.</p>
     <div id="flexbox">
-    <!-- Guide to Github -->
 	<figure>
-    <a href="https://r3adams.github.io/grc420/github.html" target="_blank"><img class="thumb" src="FF-W_Github.jpg" /></a>
-	<figcaption>Guide to using Github as a repository for HTML files.</figcaption>
-	</figure>
 
     <!-- Basic Fixed-Width Page -->
-	<figure>
     <a href="alice.html" target="_blank"><img class="thumb" src="thumb-alice.jpg" /></a>
 	<figcaption>"Alice in Wonderland," an example of a fixed-width page appropriate for text-heavy documents. Note the text wrap around the PNG image using the "shape-around" style.</figcaption>
 	</figure>
@@ -133,12 +135,6 @@
     <!--Page Sizes -->
     <a href="https://r3adams.github.io/grc420/page-size.html" target="_blank"><img class="thumb" src="thumb-pagesizes.jpg" /></a>
 	<figcaption>Comparison of various fixed-width page sizes in pixels (px)</figcaption>
-	</figure>
-
-    <!-- Menu Bars -->
-    <figure>
-	<a href="menu-bars.html" target="_blank"><img class="thumb" src="thumb-menubars.jpg" /></a>
-	<figcaption>Three types of menu bars for links</figcaption>
 	</figure>
 
     <!-- Video -->
